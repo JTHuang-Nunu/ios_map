@@ -16,6 +16,8 @@
 		28B1BF6B2A0241A000EDE45B /* ios_mapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B1BF6A2A0241A000EDE45B /* ios_mapTests.swift */; };
 		28B1BF752A0241A000EDE45B /* ios_mapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B1BF742A0241A000EDE45B /* ios_mapUITests.swift */; };
 		28B1BF772A0241A000EDE45B /* ios_mapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B1BF762A0241A000EDE45B /* ios_mapUITestsLaunchTests.swift */; };
+		28B1BF852A02423900EDE45B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B1BF842A02423900EDE45B /* MapKit.framework */; };
+		28B1BF872A02485900EDE45B /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B1BF862A02485900EDE45B /* mark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		28B1BF702A0241A000EDE45B /* ios_mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_mapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B1BF742A0241A000EDE45B /* ios_mapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mapUITests.swift; sourceTree = "<group>"; };
 		28B1BF762A0241A000EDE45B /* ios_mapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28B1BF842A02423900EDE45B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		28B1BF862A02485900EDE45B /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B1BF852A02423900EDE45B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				28B1BF692A0241A000EDE45B /* ios_mapTests */,
 				28B1BF732A0241A000EDE45B /* ios_mapUITests */,
 				28B1BF512A02419F00EDE45B /* Products */,
+				28B1BF832A02423900EDE45B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +111,7 @@
 				28B1BF592A02419F00EDE45B /* Main.storyboard */,
 				28B1BF5C2A0241A000EDE45B /* Assets.xcassets */,
 				28B1BF5E2A0241A000EDE45B /* LaunchScreen.storyboard */,
+				28B1BF862A02485900EDE45B /* mark.png */,
 				28B1BF612A0241A000EDE45B /* Info.plist */,
 			);
 			path = ios_map;
@@ -125,6 +132,14 @@
 				28B1BF762A0241A000EDE45B /* ios_mapUITestsLaunchTests.swift */,
 			);
 			path = ios_mapUITests;
+			sourceTree = "<group>";
+		};
+		28B1BF832A02423900EDE45B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28B1BF842A02423900EDE45B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +248,7 @@
 			files = (
 				28B1BF602A0241A000EDE45B /* LaunchScreen.storyboard in Resources */,
 				28B1BF5D2A0241A000EDE45B /* Assets.xcassets in Resources */,
+				28B1BF872A02485900EDE45B /* mark.png in Resources */,
 				28B1BF5B2A02419F00EDE45B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
