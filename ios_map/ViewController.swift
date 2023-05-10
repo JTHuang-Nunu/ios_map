@@ -15,18 +15,26 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     //class 8-2
     override func viewDidLoad() {
-        var point = [CLLocationCoordinate2D]()
-        point.append(CLLocationCoordinate2D(latitude: 24.2013, longitude: 120.5810))
-        point.append(CLLocationCoordinate2D(latitude: 24.2044, longitude: 120.6559))
-        point.append(CLLocationCoordinate2D(latitude: 24.1424, longitude: 120.5783))
-        point.append(CLLocationCoordinate2D(latitude: 24.1380, longitude: 120.6401))
-
-
-        let polygon = MKPolygon(coordinates: &point, count: point.count)
-        mapView?.addOverlay(polygon)
-        mapView?.mapType = .standard
-        mapView?.mapType = .satellite
-        mapView?.mapType = .hybrid
+        super.viewDidLoad()
+        let ground = CLLocationCoordinate2D(latitude: 48.858356, longitude: 2.294481)
+        let eyeFrom = CLLocationCoordinate2D(latitude: 48.85, longitude: 2.29)
+        let camera = MKMapCamera(lookingAtCenter: ground, fromEyeCoordinate: eyeFrom, eyeAltitude: 30)
+        
+        mapView.mapType = .satelliteFlyover 
+        mapView.camera = camera
+        
+//        var point = [CLLocationCoordinate2D]()
+//        point.append(CLLocationCoordinate2D(latitude: 24.2013, longitude: 120.5810))
+//        point.append(CLLocationCoordinate2D(latitude: 24.2044, longitude: 120.6559))
+//        point.append(CLLocationCoordinate2D(latitude: 24.1424, longitude: 120.5783))
+//        point.append(CLLocationCoordinate2D(latitude: 24.1380, longitude: 120.6401))
+//
+//
+//        let polygon = MKPolygon(coordinates: &point, count: point.count)
+//        mapView?.addOverlay(polygon)
+//        mapView?.mapType = .standard
+//        mapView?.mapType = .satellite
+//        mapView?.mapType = .hybrid
         
 //        let taipei101 = CLLocationCoordinate2D(latitude: 25.033850, longitude: 121.564977)
 //        let airstation = CLLocationCoordinate2D(latitude: 25.068554, longitude: 121.552932)
